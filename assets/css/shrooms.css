@@ -1,0 +1,80 @@
+/* === Obecný textový blok (historie, dodavatelé) === */
+.text-block {
+  max-width: 900px;
+  margin: 140px auto;
+  margin-bottom: 40px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  font-family: 'Baloo 2', cursive;
+  color: #2c1e1e;
+  line-height: 1.7;
+}
+
+.text-block h1,
+.text-block h2 {
+  font-family: 'Coiny', cursive;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text-block p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* === Sekce s houbami === */
+.mushroom-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mushroom-block {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.mushroom-block img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  flex: 1 1 300px;
+}
+
+.mushroom-block div {
+  flex: 1 1 400px;
+  padding: 30px;
+  font-family: 'Baloo 2', cursive;
+}
+
+.mushroom-block h2 {
+  font-family: 'Coiny', cursive;
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: #2c1e1e;
+}
+
+.mushroom-block p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #2c1e1e;
+  margin-bottom: 15px;
+}
+
+/* Poznámka o EU omezeních */
+.disclaimer {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #a1531f;
+}

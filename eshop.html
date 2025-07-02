@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-shop | Funghuj</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/eshop.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+</head>
+<body>
+    <header>
+      <div class="header-left">
+        <img src="assets/images/logo3.png" alt="Funghuj logo" class="logo" />
+      </div>
+
+      <nav class="header-center">
+        <ul class="nav-links">
+          <li><a href="/index.html#product-list">Produkty</a></li>
+          <li><a href="/eshop.html">E-shop</a></li> <!-- 🔥 nový odkaz -->
+          <li><a href="/shrooms.html">O houbách</a></li>
+          <li><a href="/index.html#onas">O nás</a></li>
+          <li><a href="/index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+<a href="cart.html" class="cart-icon" title="Košík">
+  <i class="fas fa-shopping-cart"></i>
+</a>
+        <select id="language-select">
+          <option value="cs">CZ</option>
+          <option value="sk">SK</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </header>
+
+<main>
+
+  <section class="shop-container">
+    <aside class="shop-sidebar">
+      <h2>Produkty</h2>
+
+      <div class="category-block">
+        <h3 onclick="toggleCategory(this)">Práškové extrakty</h3>
+        <ul class="product-list">
+          <li onclick="showProduct('lions-mane')">Lion’s Mane</li>
+          <li onclick="showProduct('reishi')">Reishi</li>
+          <li onclick="showProduct('turkey-tail')">Turkey Tail</li>
+          <li onclick="showProduct('chaga')">Chaga</li>
+        </ul>
+      </div>
+
+      <div class="category-block">
+        <h3 onclick="toggleCategory(this)">Kapsle</h3>
+        <ul class="product-list">
+          <li onclick="showProduct('lions-mane-caps')">Lion’s Mane kapsle</li>
+          <li onclick="showProduct('reishi-caps')">Reishi kapsle</li>
+        </ul>
+      </div>
+
+      <div class="category-block">
+        <h3 onclick="toggleCategory(this)">Tinktury z hub</h3>
+        <ul class="product-list">
+          <li onclick="showProduct('chaga-tincture')">Chaga tinktura</li>
+          <li onclick="showProduct('reishi-tincture')">Reishi tinktura</li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="product-detail" id="product-detail">
+      <p>Vyberte produkt z nabídky vlevo.</p>
+    </div>
+  </section>
+
+  </main>
+  
+    <footer>
+    <p>© 2025 Funghuj. Láska, houby a zdraví ✌️🍄</p>
+  </footer>
+
+  <script src="assets/js/eshop.js"></script>
+</body>
+</html>

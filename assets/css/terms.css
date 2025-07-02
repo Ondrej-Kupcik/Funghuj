@@ -1,0 +1,44 @@
+body {
+  font-family: 'Baloo 2', cursive;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  background-image: url('../images/backround1.png');
+  background-size: cover;
+  background-position: center;
+  padding-top: 120px;
+  color: #2c1e1e;
+}
+
+h1, h2, h3,
+.product-detail h2,
+.shop-sidebar h2,
+.category-block h3 {
+  font-family: 'Coiny', cursive;
+}
+
+.terms-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 60px 20px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.terms-content h1 {
+  font-size: 2.4em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.terms-content section {
+  margin-bottom: 30px;
+}
+
+.terms-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #a1531f;
+}

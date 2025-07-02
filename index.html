@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funghuj - Funkční houby</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+      <div class="header-left">
+        <img src="assets/images/logo3.png" alt="Funghuj logo" class="logo" />
+      </div>
+
+      <nav class="header-center">
+        <ul class="nav-links">
+          <li><a href="/index.html#product-list">Produkty</a></li>
+          <li><a href="/eshop.html">E-shop</a></li> 
+          <li><a href="/shrooms.html">O houbách</a></li>
+          <li><a href="/index.html#onas">O nás</a></li>
+          <li><a href="/index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+<a href="cart.html" class="cart-icon" title="Košík">
+  <i class="fas fa-shopping-cart"></i>
+</a>
+        <select id="language-select">
+          <option value="cs">CZ</option>
+          <option value="sk">SK</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </header>
+
+  <main>
+
+<section class="hero">
+  <div class="hero-text slide-left">
+    <h1>Objevte sílu funkčních hub</h1>
+    <p>Přírodní podpora pro vaši mysl, tělo i imunitu.</p>
+  </div>
+
+  <div class="hero-logo slide-right">
+    <img src="assets/images/logo3.png" alt="Funghuj logo">
+  </div>
+
+  <!-- Nově přidaný blok s ikonami – začíná skrytý -->
+  <div class="hero-icons hidden">
+    <div class="icon-row">
+      <img src="assets/images/natural.png" alt="Prirodni">
+      <img src="assets/images/additives.png" alt="Bez aditiv">
+      <img src="assets/images/gmofree.png" alt="Bez GMO">
+      <img src="assets/images/antioxidant.png" alt="Antioxidant">
+      <img src="assets/images/vegan.png" alt="Vegan">
+    </div>
+  </div>
+</section>
+
+<section id="product-list" class="product-section">
+
+  <!-- 1. Lion's Mane -->
+  <div class="product-row">
+    <div class="product-image-wrapper">
+      <img src="assets/images/lions_Mane.png" alt="Lion's Mane" class="product-image">
+    </div>
+    <div class="product-text">
+      <h2>Lion`s Mane</h2>
+      <p>
+        100% extrakt z plodnic houby Lion’s Mane (Hericium erinaceus).  
+        Obsahuje <strong>30 % beta-glukanů</strong> a přirozeně se vyskytující sloučeniny, jako jsou hericenony a erinaciny.  
+        Je přirozeným zdrojem <strong>zinku, draslíku, železa</strong> a <strong>selenu</strong>.  
+        <br>
+        <a href="/o-houbach/lions_mane" style="text-decoration: underline;">Čti více</a>
+      </p>
+      <a href="eshop.html?produkt=lions-mane" class="buy-button">Koupit</a>
+    </div>
+  </div>
+
+  <!-- 2. Reishi -->
+  <div class="product-row reverse">
+    <div class="product-image-wrapper">
+      <img src="assets/images/reishi1.png" alt="Reishi" class="product-image">
+    </div>
+    <div class="product-text">
+      <h2>Reishi</h2>
+      <p>
+        100% extrakt z plodnic houby Reishi (Ganoderma lucidum).  
+        Obsahuje <strong>30 % beta-glukanů</strong> a přirozené triterpenoidy, jako jsou ganoderické kyseliny.  
+        Je přirozeným zdrojem <strong>mědi, železa, hořčíku</strong> a <strong>zinku</strong>.  
+        <br>
+        <a href="/o-houbach/reishi" style="text-decoration: underline;">Čti více</a>
+      </p>
+      <a href="eshop.html?produkt=reishi" class="buy-button">Koupit</a>
+    </div>
+  </div>
+
+  <!-- 3. Turkey Tail -->
+  <div class="product-row">
+    <div class="product-image-wrapper">
+      <img src="assets/images/turkeyTail.png" alt="Turkey Tail" class="product-image">
+    </div>
+    <div class="product-text">
+      <h2>Turkey Tail</h2>
+      <p>
+        100% extrakt z plodnic houby Turkey Tail (Trametes versicolor) v BIO kvalitě.  
+        Obsahuje <strong>30 % beta-glukanů</strong> a přirozené fenolové a polysacharidové sloučeniny.  
+        Je přirozeným zdrojem <strong>mědi, draslíku, selenu</strong> a <strong>vitaminu D2</strong>.  
+        <br>
+        <a href="/o-houbach/turkey-tail" style="text-decoration: underline;">Čti více</a>
+      </p>
+      <a href="eshop.html?produkt=turkey-tail" class="buy-button">Koupit</a>
+    </div>
+  </div>
+
+  <!-- 4. Chaga -->
+  <div class="product-row reverse">
+    <div class="product-image-wrapper">
+      <img src="assets/images/chaga2.png" alt="Chaga" class="product-image">
+    </div>
+    <div class="product-text">
+      <h2>Chaga</h2>
+      <p>
+        100% extrakt z houby Chaga (Inonotus obliquus) ve špičkové kvalitě.  
+        Obsahuje <strong>30 % beta-glukanů</strong> a bohaté množství <strong>antioxidantů</strong> včetně melaninu.  
+        Je přirozeným zdrojem <strong>zinku, mědi, draslíku</strong> a <strong>vitaminu D</strong>.  
+        <br>
+        <a href="/o-houbach/chaga" style="text-decoration: underline;">Čti více</a>
+      </p>
+      <a href="eshop.html?produkt=chaga" class="buy-button">Koupit</a>
+    </div>
+  </div>
+
+</section>
+
+<section id="onas" class="about-box">
+  <div class="about-inner">
+    <h2>Jak vzniklo Funghuj?</h2>
+    <p>
+      Jsme malý start-up, který vznikl díky osobní zkušenosti s extraktem z <strong>Lion’s Mane</strong>. Během intenzivního kurzu programování jsem hledal přírodní způsob, jak podpořit mozek. <strong>Lion’s Mane</strong> znatelně podpořil kognitivní funkce – zejména soustředění a schopnost absorbovat nové informace. Při krátkém vysazení jsem zaznamenal útlum, po opětovném nasazení se účinky rychle vrátily. Ukázalo mi to, že houby mohou být víc než potravina – že mají skutečný potenciál ovlivnit zdraví na mnoha úrovních.</p>
+    <p>
+      Postupně jsem objevil i další funkční houby. Každá má své jedinečné účinky: <strong>Reishi</strong> prospívá pleti a spánku, <strong>Turkey Tail</strong> podporuje zdravou střevní mikroflóru a <strong>Chaga</strong> působí jako silný antioxidant. Fascinovalo mě, jaký mají potenciál – a jak málo se o nich ví.
+    </p>
+    <p>
+      A tak vznikl Funghuj. Chceme sdílet osobní zkušenost a nabídnout kvalitní extrakty lidem, kteří hledají přirozenou cestu ke zdraví a pohodě.
+    </p>
+
+    <h2>Proč extrakty?</h2>
+    <p>
+      Účinné látky v houbách jsou uzavřené v buněčných stěnách z chitinu, který tělo neumí dobře rozložit. Správná extrakce umožní tělu získat to, co je opravdu důležité – <strong>beta-glukany</strong>, <strong>polysacharidy</strong> a další bioaktivní sloučeniny.
+    </p>
+    <p>
+      Tyto látky posilují imunitní systém, zatímco minerály jako <strong>zinek</strong>, <strong>měď</strong> a <strong>draslík</strong> přispívají k celkové rovnováze. Kvalitní extrakt = lepší vstřebatelnost a skutečný účinek.
+    </p>
+  </div>
+</section>
+
+<section id="kontakt" class="contact-section">
+  <div class="contact-inner">
+    <h2>Kontaktujte nás</h2>
+    <p>Máte dotaz nebo zpětnou vazbu? Napište nám přes formulář nebo na <a href="mailto:info@funghuj.cz">info@funghuj.cz</a>.</p>
+    
+    <form action="mail.php" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Vaše jméno" required>
+      <input type="email" name="email" placeholder="Váš e-mail" required>
+      <textarea name="message" rows="5" placeholder="Zpráva" required></textarea>
+      <button type="submit">Odeslat zprávu</button>
+    </form>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Funghuj. Láska, houby a zdraví ✌️🍄</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

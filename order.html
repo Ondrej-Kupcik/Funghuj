@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Objednávka | Funghuj</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/order.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <script src="https://widget.packeta.com/www/js/library.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="assets/images/logo3.png" alt="Funghuj logo" class="logo" />
+    </div>
+      <nav class="header-center">
+        <ul class="nav-links">
+          <li><a href="/index.html#product-list">Produkty</a></li>
+          <li><a href="/eshop.html">E-shop</a></li> <!-- 🔥 nový odkaz -->
+          <li><a href="/shrooms.html">O houbách</a></li>
+          <li><a href="/index.html#onas">O nás</a></li>
+          <li><a href="/index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    <div class="header-right">
+      <a href="/cart.html" class="cart-icon" title="Košík"><i class="fas fa-shopping-cart"></i></a>
+      <select id="language-select">
+        <option value="cs">CZ</option>
+        <option value="sk">SK</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="order-container">
+    <h1>Dokončení objednávky</h1>
+
+    <section id="summary" class="order-summary">
+      <!-- Přehled produktů se načte z localStorage -->
+    </section>
+
+    <form id="order-form">
+      <h2>Vaše údaje</h2>
+      <input type="text" name="name" placeholder="Jméno a příjmení" required />
+      <input type="email" name="email" placeholder="E-mail" required />
+      <textarea name="address" placeholder="Adresa pro doručení" required></textarea>
+
+    <h2>Způsob dopravy</h2>
+    <div class="shipping-options">
+      <label>
+        <input type="radio" name="shipping" value="packeta" data-price="89" required onclick="togglePacketaWidget()" />
+        Zásilkovna / Packeta – 89 Kč
+      </label>
+      <!-- KONTEJNER NA WIDGET -->
+      <div id="packeta-widget-container" style="display:none; margin-top: 10px;">
+        <button type="button" id="packeta-button">Vybrat výdejní místo</button>
+        <p id="packeta-selected" style="margin-top: 10px; font-weight: bold;"></p>
+        <input type="hidden" name="packetaPointId" id="packeta-point-id" />
+     </div>
+
+      <br>
+      <label>
+        <input type="radio" name="shipping" value="balikovna" data-price="69" onclick="togglePacketaWidget()" />
+        Balíkovna – 69 Kč
+      </label><br>
+      <label>
+        <input type="radio" name="shipping" value="ppl" data-price="119" onclick="togglePacketaWidget()" />
+        PPL kurýr – 119 Kč
+      </label>
+    </div>
+
+            <div class="terms-checkbox">
+        <label>
+            <input type="checkbox" name="terms" required />
+            Souhlasím s <a href="/terms-conditions.html" target="_blank">obchodními podmínkami</a> a se <a href="/terms-conditions.html" target="_blank">zpracováním osobních údajů</a>.
+        </label>
+        </div>
+
+
+      <button type="submit">Odeslat objednávku</button>
+    </form>
+  </main>
+
+      <footer>
+    <p>© 2025 Funghuj. Láska, houby a zdraví ✌️🍄</p>
+  </footer>
+
+  <script src="assets/js/order.js"></script>
+</body>
+</html>

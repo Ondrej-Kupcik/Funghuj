@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Košík | Funghuj</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/cart.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+      <header>
+      <div class="header-left">
+        <img src="assets/images/logo3.png" alt="Funghuj logo" class="logo" />
+      </div>
+
+      <nav class="header-center">
+        <ul class="nav-links">
+          <li><a href="/index.html#product-list">Produkty</a></li>
+          <li><a href="/eshop.html">E-shop</a></li> <!-- 🔥 nový odkaz -->
+          <li><a href="/shrooms.html">O houbách</a></li>
+          <li><a href="/index.html#onas">O nás</a></li>
+          <li><a href="/index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+<a href="cart.html" class="cart-icon" title="Košík">
+  <i class="fas fa-shopping-cart"></i>
+</a>
+        <select id="language-select">
+          <option value="cs">CZ</option>
+          <option value="sk">SK</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </header>
+
+  <main class="cart-main">
+    <h1>Košík</h1>
+    <div id="cart-container">
+      <!-- Sem se načtou položky z localStorage -->
+    </div>
+    <div class="cart-summary">
+      <p><strong>Celková cena:</strong> <span id="cart-total">0 Kč</span></p>
+      <a href="order.html" class="checkout-button">Přejít k objednávce</a>
+    </div>
+  </main>
+
+      <footer>
+        <p>© 2025 Funghuj. Láska, houby a zdraví ✌️🍄</p>
+      </footer>
+      
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>

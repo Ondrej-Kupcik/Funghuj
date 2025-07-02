@@ -1,0 +1,34 @@
+[
+  {
+    "id": "lions-mane",
+    "name": "Lion’s Mane (Hericium erinaceus)",
+    "image": "assets/images/lions_mane.png",
+    "description": "100% extrakt z plodnic houby Lion’s Mane (Hericium erinaceus). Obsahuje vysoký podíl beta-glukanů a přirozeně se vyskytující sloučeniny jako hericenony a erinaciny, které podporují nervovou soustavu a kognitivní funkce.",
+    "weight": "100 g práškového extraktu",
+    "price": 420
+  },
+  {
+    "id": "reishi",
+    "name": "Reishi (Ganoderma lucidum)",
+    "image": "assets/images/reishi1.png",
+    "description": "100% extrakt z plodnic houby Reishi (Ganoderma lucidum). Obsahuje 30 % beta-glukanů a přírodní triterpenoidy jako ganoderové kyseliny. Podporuje imunitu, relaxaci a vitalitu.",
+    "weight": "100 g práškového extraktu",
+    "price": 390
+  },
+  {
+    "id": "turkey-tail",
+    "name": "Turkey Tail (Trametes versicolor)",
+    "image": "assets/images/turkeyTail.png",
+    "description": "BIO extrakt z plodnic houby Turkey Tail (Trametes versicolor). Obsahuje 30 % beta-glukanů, polysacharidy a fenolové sloučeniny. Známá pro podporu imunity a střevní mikroflóry.",
+    "weight": "100 g práškového extraktu",
+    "price": 380
+  },
+  {
+    "id": "chaga",
+    "name": "Chaga (Inonotus obliquus)",
+    "image": "assets/images/chaga2.png",
+    "description": "100% extrakt z houby Chaga (Inonotus obliquus) ve špičkové kvalitě. Obsahuje 30 % beta-glukanů a vysoký podíl antioxidantů včetně melaninu. Pomáhá s oxidativním stresem a podporuje obranyschopnost.",
+    "weight": "100 g práškového extraktu",
+    "price": 450
+  }
+]

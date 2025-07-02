@@ -1,0 +1,94 @@
+body {
+  font-family: 'Baloo 2', cursive;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  background-image: url('../images/backround1.png');
+  background-size: cover;
+  background-position: center;
+  padding-top: 120px;
+  color: #2c1e1e;
+}
+
+h1, h2, h3,
+.product-detail h2,
+.shop-sidebar h2,
+.category-block h3 {
+  font-family: 'Coiny', cursive;
+}
+
+.order-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 40px 20px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+
+.order-container h1, .order-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.order-summary {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 2px solid #a1531f;
+  border-radius: 12px;
+  background-color: #fff;
+  font-size: 1.1em;
+}
+
+.order-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order-summary li {
+  margin-bottom: 10px;
+}
+
+#order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#order-form input,
+#order-form textarea,
+.shipping-options label {
+  font-size: 1.1em;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.shipping-options {
+  padding: 10px;
+  background: #fdf7f4;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.shipping-options label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#order-form button {
+  background-color: #a1531f;
+  color: white;
+  font-size: 1.3em;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#order-form button:hover {
+  background-color: #853f17;
+}

@@ -1,0 +1,138 @@
+body {
+  font-family: 'Baloo 2', cursive;
+  line-height: 1.0;
+  font-size: 1.1rem;
+  background-image: url('../images/backround1.png');
+  background-size: cover;
+  background-position: center;
+  padding-top: 120px;
+  color: #2c1e1e;
+}
+
+h1, h2, h3,
+.product-detail h2,
+.shop-sidebar h2,
+.category-block h3 {
+  font-family: 'Coiny', cursive;
+}
+
+.shop-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 60px;
+}
+
+.shop-sidebar {
+flex: 0 0 300px; /* více prostoru */
+  min-width: 280px; /* nikdy menší než */
+  max-width: 360px; /* nikdy větší než */
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.shop-sidebar h2 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.category-block {
+  margin-bottom: 30px;
+}
+
+.category-block h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.category-block h3:hover {
+  color: #a1531f;
+}
+
+.category-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* výchozí stav sbalený */
+}
+
+.product-list li {
+  margin-bottom: 12px;
+  padding: 12px;
+  background-color: #a1531f;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.product-list li:hover {
+  background-color: #853f17;
+  transform: scale(1.03);
+}
+
+.product-detail {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  font-size: 1.2em;
+  min-height: 500px;
+}
+
+.product-detail img {
+  max-width: 360px;
+  height: auto;
+  float: left;
+  margin-right: 40px;
+  border-radius: 12px;
+}
+
+.product-detail h2 {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+}
+
+.product-detail p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.product-detail .buy-block {
+  clear: both;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.product-detail select,
+.product-detail button {
+  font-family: 'Coiny', cursive;
+  font-size: 1.1em;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+.product-detail button {
+  background-color: #a1531f;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.product-detail button:hover {
+  transform: scale(1.05);
+  background-color: #853f17;
+}
