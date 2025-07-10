@@ -1,7 +1,7 @@
 body {
   font-family: 'Baloo 2', cursive;
   line-height: 1.7;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   background-image: url('../images/backround1.png');
   background-size: cover;
   background-position: center;
@@ -78,10 +78,18 @@ h1, h2, h3,
   cursor: pointer;
 }
 
+.shipping-options input[type="radio"],
+.payment-options input[type="radio"] {
+  width: auto;
+  height: auto;
+  accent-color: #a1531f;  /* stejná akcentní barva jako tlačítko */
+  outline: none;          /* odstraní nežádoucí rámeček */
+}
+
 #order-form button {
   background-color: #a1531f;
   color: white;
-  font-size: 1.3em;
+  font-size: 0.9em;
   padding: 15px;
   border: none;
   border-radius: 10px;
@@ -92,3 +100,49 @@ h1, h2, h3,
 #order-form button:hover {
   background-color: #853f17;
 }
+
+/* ========= Platba – ladí se se sekcí dopravy ========= */
+.payment-options {
+  padding: 10px;
+  background: #fdf7f4;           /* stejná barva jako shipping-options */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.payment-options label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.payment-options input[type="radio"] {
+  width: auto;
+  height: auto;
+  accent-color: #a1531f;         /* stejná akcentní barva jako tlačítko */
+}
+
+.order-preview {
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid #a1531f;
+  border-radius: 12px;
+  background-color: #fff;
+  font-size: 1.1em;
+}
+.order-preview h3 {
+  font-family: 'Coiny', cursive;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.order-preview ul {
+  list-style: none;
+  padding: 0;
+}
+.order-preview li {
+  margin-bottom: 8px;
+}
+

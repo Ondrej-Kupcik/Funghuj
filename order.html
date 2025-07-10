@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-  <script src="https://widget.packeta.com/www/js/library.js"></script>
+  <script src="https://widget.packeta.com/v6/www/js/library.js"></script>
 </head>
 <body>
   <header>
@@ -51,7 +51,7 @@
     <h2>Způsob dopravy</h2>
     <div class="shipping-options">
       <label>
-        <input type="radio" name="shipping" value="packeta" data-price="89" required onclick="togglePacketaWidget()" />
+        <input type="radio" name="shipping" value="packeta" data-fee="89" required onclick="togglePacketaWidget()" />
         Zásilkovna / Packeta – 89 Kč
       </label>
       <!-- KONTEJNER NA WIDGET -->
@@ -63,14 +63,32 @@
 
       <br>
       <label>
-        <input type="radio" name="shipping" value="balikovna" data-price="69" onclick="togglePacketaWidget()" />
+        <input type="radio" name="shipping" value="balikovna" data-fee="69" onclick="togglePacketaWidget()" />
         Balíkovna – 69 Kč
       </label><br>
       <label>
-        <input type="radio" name="shipping" value="ppl" data-price="119" onclick="togglePacketaWidget()" />
+        <input type="radio" name="shipping" value="ppl" data-fee="119" onclick="togglePacketaWidget()" />
         PPL kurýr – 119 Kč
       </label>
     </div>
+
+    <h2>Způsob platby</h2>
+    <div class="payment-options">
+      <label>
+        <input type="radio" name="payment" value="dobirka" data-fee="49" required />
+        Dobírka (+49 Kč)
+      </label>
+      <label>
+        <input type="radio" name="payment" value="kartou" data-fee="0" />
+        Platba kartou (zdarma)
+      </label>
+      <label>
+        <input type="radio" name="payment" value="prevodem" data-fee="0" />
+        Bankovním převodem (zdarma)
+      </label>
+    </div>
+
+    <div class="terms-checkbox">
 
             <div class="terms-checkbox">
         <label>
@@ -79,8 +97,9 @@
         </label>
         </div>
 
+<div id="order-preview" class="order-preview"></div>
+<button type="submit">Odeslat objednávku</button>
 
-      <button type="submit">Odeslat objednávku</button>
     </form>
   </main>
 
